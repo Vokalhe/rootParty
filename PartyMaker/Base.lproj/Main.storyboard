@@ -1,0 +1,744 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BLE-AW-2mB">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="MyriadProBold.ttf">
+            <string>MyriadPro-Bold</string>
+            <string>MyriadPro-Bold</string>
+            <string>MyriadPro-Bold</string>
+            <string>MyriadPro-Bold</string>
+            <string>MyriadPro-Bold</string>
+        </mutableArray>
+        <mutableArray key="MyriadProRegular.ttf">
+            <string>MyriadPro-Regular</string>
+            <string>MyriadPro-Regular</string>
+            <string>MyriadPro-Regular</string>
+            <string>MyriadPro-Regular</string>
+            <string>MyriadPro-Regular</string>
+            <string>MyriadPro-Regular</string>
+            <string>MyriadPro-Regular</string>
+            <string>MyriadPro-Regular</string>
+            <string>MyriadPro-Regular</string>
+            <string>MyriadPro-Regular</string>
+            <string>MyriadPro-Regular</string>
+            <string>MyriadPro-Regular</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="mVi-sf-s6y">
+            <objects>
+                <tabBarController id="lBE-Yg-pl2" sceneMemberID="viewController">
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="zck-Tf-NCz">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" red="0.2666666667" green="0.28627450980000002" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="selectedImageTintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="rNo-J2-fuP" kind="relationship" relationship="viewControllers" id="m6q-QW-LP7"/>
+                        <segue destination="Vj3-Gn-YEe" kind="relationship" relationship="viewControllers" id="vUK-XD-waa"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qq1-Q4-5AU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-114" y="307"/>
+        </scene>
+        <!--Parties-->
+        <scene sceneID="lQQ-tw-buv">
+            <objects>
+                <navigationController title="Parties" id="rNo-J2-fuP" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" image="List" id="elv-Zj-x9F"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="UEb-6z-N0x">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.2666666667" green="0.28627450980000002" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.26666666666666666" green="0.28627450980392155" blue="0.32549019607843138" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="MyriadPro-Bold" family="Myriad Pro" pointSize="15"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="textShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <offsetWrapper key="textShadowOffset" horizontal="0.0" vertical="0.0"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="ZdS-WQ-UOM" kind="relationship" relationship="rootViewController" id="McH-9s-o6n"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Y5r-vk-NX7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="510" y="47"/>
+        </scene>
+        <!--PARTY MAKER-->
+        <scene sceneID="N87-W5-Ygo">
+            <objects>
+                <tableViewController id="ZdS-WQ-UOM" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="CiO-DZ-ppD">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="separatorColor" red="0.38431372549999998" green="0.41176470590000003" blue="0.46666666670000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="sectionIndexColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="MZr-Ub-egC">
+                                <rect key="frame" x="0.0" y="92" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="MZr-Ub-egC" id="Nek-1N-f4W">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="ZdS-WQ-UOM" id="mp3-Aa-83F"/>
+                            <outlet property="delegate" destination="ZdS-WQ-UOM" id="c6e-59-50S"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="PARTY MAKER" id="MHp-mM-zr0">
+                        <barButtonItem key="backBarButtonItem" title="back" id="pxB-aV-g33">
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="W03-JN-b49">
+                            <color key="tintColor" red="0.13725490200000001" green="0.1450980392" blue="0.16862745100000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <segue destination="xa4-Rp-PB2" kind="push" id="IFa-0r-io0"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1rs-dg-B8x" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="980" y="55"/>
+        </scene>
+        <!--CREATE PARTY-->
+        <scene sceneID="rf0-ia-h1X">
+            <objects>
+                <viewController id="xa4-Rp-PB2" customClass="EVANewViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Iid-cm-Cqx"/>
+                        <viewControllerLayoutGuide type="bottom" id="9fx-eT-UAW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="EVANewViewController" id="szo-tl-a5Z">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WbH-Iv-2d7">
+                                <rect key="frame" x="120" y="25" width="190" height="36"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.69411764710000001" blue="0.1058823529" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="pl2-ag-iIL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MyriadPro-Bold" family="Myriad Pro" pointSize="16"/>
+                                <state key="normal" title="CHOOSE DATE">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.18039215689999999" green="0.17254901959999999" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="actionChooseDate:" destination="xa4-Rp-PB2" eventType="touchUpInside" id="vHP-Op-ApY"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Your party Name" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="a8S-Wd-MLa">
+                                <rect key="frame" x="120" y="73" width="190" height="40"/>
+                                <color key="backgroundColor" red="0.13725490200000001" green="0.1450980392" blue="0.16862745100000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="hOW-ME-XtD"/>
+                                </constraints>
+                                <color key="textColor" red="0.29803921570000003" green="0.32156862749999998" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="yes" returnKeyType="done"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="actionYourPartyName:" destination="xa4-Rp-PB2" eventType="editingDidEnd" id="IQh-Kt-CDR"/>
+                                    <outlet property="delegate" destination="xa4-Rp-PB2" id="5q5-Sg-vnu"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MkO-d9-reh">
+                                <rect key="frame" x="120" y="477" width="190" height="36"/>
+                                <color key="backgroundColor" red="0.16078431369999999" green="0.56078431370000004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="m56-KM-7pc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MyriadPro-Bold" family="Myriad Pro" pointSize="16"/>
+                                <state key="normal" title="CHOOSE LOCATION">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="actionChooseLocation:" destination="xa4-Rp-PB2" eventType="touchUpInside" id="i89-Su-tOF"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="TimePopup" translatesAutoresizingMaskIntoConstraints="NO" id="gL5-MH-f7P">
+                                <rect key="frame" x="120" y="124" width="40" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="9T0-32-OK2"/>
+                                    <constraint firstAttribute="height" constant="31" id="asz-gi-eQo"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="TimePopupOn180" translatesAutoresizingMaskIntoConstraints="NO" id="2fg-XK-QhS">
+                                <rect key="frame" x="273" y="167" width="40" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="LyE-3o-fh1"/>
+                                    <constraint firstAttribute="width" constant="40" id="tX5-0S-jfw"/>
+                                </constraints>
+                            </imageView>
+                            <slider opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1409" translatesAutoresizingMaskIntoConstraints="NO" id="qHY-Hu-aeA">
+                                <rect key="frame" x="173" y="124" width="140" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="feD-CI-49k"/>
+                                </constraints>
+                                <color key="minimumTrackTintColor" red="0.4823529412" green="0.69019607839999997" blue="0.090196078430000007" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="maximumTrackTintColor" red="0.1137254902" green="0.1215686275" blue="0.1058823529" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="actionSliderStart:" destination="xa4-Rp-PB2" eventType="valueChanged" id="3Zf-cC-mjY"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="30" minValue="30" maxValue="1439" translatesAutoresizingMaskIntoConstraints="NO" id="Of3-5F-esq">
+                                <rect key="frame" x="120" y="167" width="140" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="gbm-tC-xTC"/>
+                                </constraints>
+                                <color key="minimumTrackTintColor" red="0.4823529412" green="0.69019607839999997" blue="0.090196078430000007" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="maximumTrackTintColor" red="0.1137254902" green="0.1215686275" blue="0.1058823529" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="actionSliderEnd:" destination="xa4-Rp-PB2" eventType="valueChanged" id="Yfq-pp-j9z"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VXp-aH-Qiy">
+                                <rect key="frame" x="120" y="128" width="32" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="61n-en-BL6"/>
+                                    <constraint firstAttribute="width" constant="32" id="Z2w-Qn-UKF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="12"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="00:30" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZZu-St-cDn">
+                                <rect key="frame" x="280" y="171" width="32" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="0GL-ip-zcW"/>
+                                    <constraint firstAttribute="width" constant="32" id="5t0-sn-SLa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="12"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="e1h-pK-X9T">
+                                <rect key="frame" x="120" y="337" width="190" height="5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="5" id="OKs-3T-SBb"/>
+                                </constraints>
+                            </view>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BSy-43-Khp">
+                                <rect key="frame" x="120" y="340" width="190" height="125"/>
+                                <color key="backgroundColor" red="0.13725490200000001" green="0.1450980392" blue="0.16862745100000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" priority="700" constant="100" id="YYF-gJ-xj8"/>
+                                </constraints>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="12"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="yes"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textView>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dJi-Mv-gGW">
+                                <rect key="frame" x="15" y="49" width="1" height="452"/>
+                                <color key="backgroundColor" red="0.90196078430000004" green="0.87843137250000003" blue="0.83529411760000005" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XcC-Od-NCn">
+                                <rect key="frame" x="10" y="40" width="10" height="10"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="10" id="B6s-LI-0Ud"/>
+                                    <constraint firstAttribute="height" constant="10" id="thr-mz-rcl"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bfX-Cq-zUs">
+                                <rect key="frame" x="10" y="89" width="10" height="10"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="10" id="Dbs-tc-dSv"/>
+                                    <constraint firstAttribute="width" constant="10" id="vza-yU-a3h"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hsd-y8-l5l">
+                                <rect key="frame" x="10" y="136" width="10" height="10"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="10" id="TEL-qS-BWU"/>
+                                    <constraint firstAttribute="width" constant="10" id="lVg-Tx-RBa"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="E9L-qQ-k7Q">
+                                <rect key="frame" x="10" y="177" width="10" height="10"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="10" id="1tx-9O-hws"/>
+                                    <constraint firstAttribute="height" constant="10" id="bIT-W8-Jnf"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LBj-Uu-tR5">
+                                <rect key="frame" x="10" y="254" width="10" height="10"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="10" id="gjQ-F9-P6O"/>
+                                    <constraint firstAttribute="width" constant="10" id="h8F-ke-Koe"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PcE-fI-97v">
+                                <rect key="frame" x="10" y="397" width="10" height="10"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="10" id="RF1-qv-g7z"/>
+                                    <constraint firstAttribute="height" constant="10" id="Z52-hU-a2r"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Bed-SF-31E">
+                                <rect key="frame" x="10" y="491" width="10" height="10"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="10" id="VPO-Kg-27B"/>
+                                    <constraint firstAttribute="height" constant="10" id="cbv-j6-CmV"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="CHOOSE DAY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dhl-Fs-2ju">
+                                <rect key="frame" x="28" y="40" width="95" height="12"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="85" id="eVQ-V9-neu"/>
+                                    <constraint firstAttribute="height" constant="20" id="vb1-11-QTG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="12"/>
+                                <color key="textColor" red="0.90196078430000004" green="0.87843137250000003" blue="0.83529411760000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="PARTY NAME" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cwb-1r-sCv">
+                                <rect key="frame" x="28" y="89" width="95" height="12"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="30I-XL-zcn"/>
+                                    <constraint firstAttribute="width" constant="85" id="JWq-5I-60g"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="12"/>
+                                <color key="textColor" red="0.90196078430000004" green="0.87843137250000003" blue="0.83529411760000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="LOGO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bQF-Ld-w33">
+                                <rect key="frame" x="28" y="254" width="95" height="12"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="85" id="J4E-uK-0t0"/>
+                                    <constraint firstAttribute="height" constant="20" id="TE2-qk-LgA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="12"/>
+                                <color key="textColor" red="0.90196078430000004" green="0.87843137250000003" blue="0.83529411760000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="DESCRIPTION" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mk6-8s-1Tf">
+                                <rect key="frame" x="28" y="397" width="95" height="12"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="85" id="tVU-Vr-zHh"/>
+                                    <constraint firstAttribute="height" constant="20" id="yvP-tY-xnk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="12"/>
+                                <color key="textColor" red="0.90196078430000004" green="0.87843137250000003" blue="0.83529411760000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="LOCATION" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pd8-BG-k4x">
+                                <rect key="frame" x="28" y="491" width="95" height="12"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="85" id="APZ-ch-fq8"/>
+                                    <constraint firstAttribute="height" constant="20" id="bdN-hJ-0J1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="12"/>
+                                <color key="textColor" red="0.90196078430000004" green="0.87843137250000003" blue="0.83529411760000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="END" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Rf-a0-hzO">
+                                <rect key="frame" x="28" y="177" width="95" height="12"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="Lmv-qb-REG"/>
+                                    <constraint firstAttribute="width" constant="85" id="Vna-fv-wB0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="12"/>
+                                <color key="textColor" red="0.90196078430000004" green="0.87843137250000003" blue="0.83529411760000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="START" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cjw-hU-5O9">
+                                <rect key="frame" x="28" y="136" width="95" height="12"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="85" id="jGe-aa-9kl"/>
+                                    <constraint firstAttribute="height" constant="20" id="pAG-ze-MVt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="12"/>
+                                <color key="textColor" red="0.90196078430000004" green="0.87843137250000003" blue="0.83529411760000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" ambiguous="YES" misplaced="YES" layoutMarginsFollowReadableWidth="YES" bounces="NO" alwaysBounceHorizontal="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WTz-RN-klO">
+                                <rect key="frame" x="120" y="210" width="191" height="100"/>
+                                <subviews>
+                                    <pageControl opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="6" translatesAutoresizingMaskIntoConstraints="NO" id="JJG-pz-afn">
+                                        <rect key="frame" x="0.0" y="78" width="191" height="22"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="22" id="cmo-dv-pLV"/>
+                                        </constraints>
+                                        <color key="pageIndicatorTintColor" red="0.13725490200000001" green="0.1450980392" blue="0.16862745100000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    </pageControl>
+                                </subviews>
+                                <color key="backgroundColor" red="0.2666666667" green="0.28627450980000002" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" priority="750" constant="50" id="0IX-ij-3uc"/>
+                                </constraints>
+                                <inset key="scrollIndicatorInsets" minX="0.0" minY="0.0" maxX="1140" maxY="0.0"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.18039215689999999" green="0.19215686269999999" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="mk6-8s-1Tf" firstAttribute="width" secondItem="Dhl-Fs-2ju" secondAttribute="width" id="3y3-to-hVb"/>
+                            <constraint firstItem="cwb-1r-sCv" firstAttribute="width" secondItem="Dhl-Fs-2ju" secondAttribute="width" id="4IA-kR-pWl"/>
+                            <constraint firstItem="cjw-hU-5O9" firstAttribute="width" secondItem="Dhl-Fs-2ju" secondAttribute="width" id="5cT-L7-V6x"/>
+                            <constraint firstItem="0Rf-a0-hzO" firstAttribute="width" secondItem="Dhl-Fs-2ju" secondAttribute="width" id="8hF-oW-IbX"/>
+                            <constraint firstItem="LBj-Uu-tR5" firstAttribute="width" secondItem="XcC-Od-NCn" secondAttribute="width" id="B7x-Rz-qeH"/>
+                            <constraint firstItem="Bed-SF-31E" firstAttribute="width" secondItem="XcC-Od-NCn" secondAttribute="width" id="D4N-ru-8rF"/>
+                            <constraint firstItem="E9L-qQ-k7Q" firstAttribute="width" secondItem="XcC-Od-NCn" secondAttribute="width" id="Fw6-ZL-7wd"/>
+                            <constraint firstItem="Pd8-BG-k4x" firstAttribute="height" secondItem="Dhl-Fs-2ju" secondAttribute="height" id="JUJ-27-CLT"/>
+                            <constraint firstItem="Hsd-y8-l5l" firstAttribute="height" secondItem="XcC-Od-NCn" secondAttribute="height" id="NR3-1I-f63"/>
+                            <constraint firstItem="Hsd-y8-l5l" firstAttribute="width" secondItem="XcC-Od-NCn" secondAttribute="width" id="OmS-Gr-kw2"/>
+                            <constraint firstItem="bQF-Ld-w33" firstAttribute="width" secondItem="Dhl-Fs-2ju" secondAttribute="width" id="Pn2-qO-CvC"/>
+                            <constraint firstItem="Bed-SF-31E" firstAttribute="height" secondItem="XcC-Od-NCn" secondAttribute="height" id="Tba-7H-NeZ"/>
+                            <constraint firstItem="LBj-Uu-tR5" firstAttribute="height" secondItem="XcC-Od-NCn" secondAttribute="height" id="VRd-Pu-9Se"/>
+                            <constraint firstItem="dJi-Mv-gGW" firstAttribute="top" secondItem="szo-tl-a5Z" secondAttribute="top" constant="25" id="WaC-Nd-5pt"/>
+                            <constraint firstAttribute="bottom" secondItem="dJi-Mv-gGW" secondAttribute="bottom" constant="25" id="Xck-PZ-6o7"/>
+                            <constraint firstItem="PcE-fI-97v" firstAttribute="width" secondItem="XcC-Od-NCn" secondAttribute="width" id="Zap-7M-aHX"/>
+                            <constraint firstItem="cwb-1r-sCv" firstAttribute="height" secondItem="Dhl-Fs-2ju" secondAttribute="height" id="Zb2-hC-fux"/>
+                            <constraint firstItem="bQF-Ld-w33" firstAttribute="height" secondItem="Dhl-Fs-2ju" secondAttribute="height" id="Zee-yS-X5C"/>
+                            <constraint firstItem="mk6-8s-1Tf" firstAttribute="height" secondItem="Dhl-Fs-2ju" secondAttribute="height" id="cSo-mS-04Z"/>
+                            <constraint firstItem="dJi-Mv-gGW" firstAttribute="leading" secondItem="szo-tl-a5Z" secondAttribute="leading" constant="15" id="kQc-2H-Agu"/>
+                            <constraint firstItem="cjw-hU-5O9" firstAttribute="height" secondItem="Dhl-Fs-2ju" secondAttribute="height" id="mJZ-He-e58"/>
+                            <constraint firstItem="bfX-Cq-zUs" firstAttribute="width" secondItem="XcC-Od-NCn" secondAttribute="width" id="o8Y-0U-M5M"/>
+                            <constraint firstItem="Pd8-BG-k4x" firstAttribute="width" secondItem="Dhl-Fs-2ju" secondAttribute="width" id="sPi-sa-zYO"/>
+                            <constraint firstItem="bfX-Cq-zUs" firstAttribute="height" secondItem="XcC-Od-NCn" secondAttribute="height" id="vGY-1f-8n8"/>
+                            <constraint firstItem="E9L-qQ-k7Q" firstAttribute="height" secondItem="XcC-Od-NCn" secondAttribute="height" id="w2P-5B-qaQ"/>
+                            <constraint firstItem="0Rf-a0-hzO" firstAttribute="height" secondItem="Dhl-Fs-2ju" secondAttribute="height" id="wF0-ed-Z3N"/>
+                            <constraint firstItem="PcE-fI-97v" firstAttribute="height" secondItem="XcC-Od-NCn" secondAttribute="height" id="yco-EA-AbI"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="CREATE PARTY" id="Ac3-Ko-BdV">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="AGB-yr-HIB">
+                            <color key="tintColor" red="0.13725490200000001" green="0.1450980392" blue="0.16862745100000001" alpha="1" colorSpace="calibratedRGB"/>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="save" id="GGL-hZ-kEA">
+                            <color key="tintColor" red="0.13725490200000001" green="0.1450980392" blue="0.16862745100000001" alpha="1" colorSpace="calibratedRGB"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="buttonChooseDate" destination="WbH-Iv-2d7" id="Ia6-Ny-Wfz"/>
+                        <outlet property="buttonChooseLocation" destination="MkO-d9-reh" id="GJ3-va-Gfc"/>
+                        <outlet property="labelTimeEnd" destination="ZZu-St-cDn" id="9g3-T1-cVP"/>
+                        <outlet property="labelTimeStart" destination="VXp-aH-Qiy" id="5hZ-NO-hCO"/>
+                        <outlet property="sliderEnd" destination="Of3-5F-esq" id="qaD-ls-ZDd"/>
+                        <outlet property="sliderStart" destination="qHY-Hu-aeA" id="tjS-Id-Z7k"/>
+                        <outlet property="textDescription" destination="BSy-43-Khp" id="F3B-sf-VTK"/>
+                        <outlet property="yourPartyName" destination="a8S-Wd-MLa" id="axe-AY-DOe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XzG-ry-7An" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1422" y="55"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="9P5-et-m9Y">
+            <objects>
+                <navigationController title="Settings" id="Vj3-Gn-YEe" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Settings" image="Settings" id="EmG-uE-ieG"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="P6w-at-Xz5">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.2666666667" green="0.28627450980000002" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.2666666667" green="0.28627450980000002" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="MyriadPro-Bold" family="Myriad Pro" pointSize="15"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="textShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ar2-pP-SOJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="520" y="723"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="Vpk-lg-mBe">
+            <objects>
+                <viewController id="BLE-AW-2mB" customClass="EVALoginViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bRz-8Y-GPV"/>
+                        <viewControllerLayoutGuide type="bottom" id="vSw-KT-Ql6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="mr3-5d-nck">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.25" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Splash" translatesAutoresizingMaskIntoConstraints="NO" id="PH4-Ue-lPi">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" red="0.2666666667" green="0.28627450980000002" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Euc-RK-FHP">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mmO-zi-K4o">
+                                        <rect key="frame" x="6" y="101" width="308" height="365"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HELLO!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HnM-gC-kVq">
+                                                <rect key="frame" x="94" y="45" width="120" height="36"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="120" id="DfW-Zw-R1Z"/>
+                                                    <constraint firstAttribute="height" constant="36" id="sE4-Fj-1I0"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="MyriadPro-Bold" family="Myriad Pro" pointSize="36"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Daa-sp-Dlh">
+                                                <rect key="frame" x="23" y="121" width="262" height="40"/>
+                                                <subviews>
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Login" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="S0T-od-Ok9">
+                                                        <rect key="frame" x="10" y="0.0" width="242" height="40"/>
+                                                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                                        <connections>
+                                                            <outlet property="delegate" destination="BLE-AW-2mB" id="0Ap-A1-fMh"/>
+                                                        </connections>
+                                                    </textField>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.13725490200000001" green="0.1450980392" blue="0.16862745100000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="9iy-kh-EcL"/>
+                                                    <constraint firstAttribute="bottom" secondItem="S0T-od-Ok9" secondAttribute="bottom" id="Cac-mU-Nvl"/>
+                                                    <constraint firstItem="S0T-od-Ok9" firstAttribute="top" secondItem="Daa-sp-Dlh" secondAttribute="top" id="Ejc-UY-TOX"/>
+                                                    <constraint firstItem="S0T-od-Ok9" firstAttribute="leading" secondItem="Daa-sp-Dlh" secondAttribute="leading" constant="10" id="KWR-Rm-meS"/>
+                                                    <constraint firstAttribute="trailing" secondItem="S0T-od-Ok9" secondAttribute="trailing" constant="10" id="jAW-gJ-3zi"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fxx-IJ-vRk">
+                                                <rect key="frame" x="23" y="178" width="262" height="40"/>
+                                                <subviews>
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Hb0-A1-r47">
+                                                        <rect key="frame" x="10" y="0.0" width="242" height="40"/>
+                                                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" returnKeyType="join" secureTextEntry="YES"/>
+                                                        <connections>
+                                                            <outlet property="delegate" destination="BLE-AW-2mB" id="ZOX-u3-9fD"/>
+                                                        </connections>
+                                                    </textField>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.13725490200000001" green="0.1450980392" blue="0.16862745100000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstItem="Hb0-A1-r47" firstAttribute="leading" secondItem="fxx-IJ-vRk" secondAttribute="leading" constant="10" id="352-h6-m07"/>
+                                                    <constraint firstAttribute="height" constant="40" id="8Kc-Kv-amX"/>
+                                                    <constraint firstAttribute="bottom" secondItem="Hb0-A1-r47" secondAttribute="bottom" id="NvS-Lw-NQX"/>
+                                                    <constraint firstItem="Hb0-A1-r47" firstAttribute="top" secondItem="fxx-IJ-vRk" secondAttribute="top" id="Xz8-KM-iDB"/>
+                                                    <constraint firstAttribute="trailing" secondItem="Hb0-A1-r47" secondAttribute="trailing" constant="10" id="jXd-Gl-6O8"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UAx-1I-mTc">
+                                                <rect key="frame" x="57" y="240" width="194" height="37"/>
+                                                <color key="backgroundColor" red="0.93725490199999995" green="0.69411764710000001" blue="0.1058823529" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="37" id="UMb-bh-yA3"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="MyriadPro-Bold" family="Myriad Pro" pointSize="16"/>
+                                                <state key="normal" title="REGISTER">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="actionClickRegister:" destination="BLE-AW-2mB" eventType="touchUpInside" id="DFe-v3-BvW"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zIK-C4-ADH">
+                                                <rect key="frame" x="57" y="296" width="194" height="37"/>
+                                                <color key="backgroundColor" red="0.54901960780000003" green="0.72941176470000002" blue="0.1137254902" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="37" id="SWk-ph-Isy"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="MyriadPro-Bold" family="Myriad Pro" pointSize="16"/>
+                                                <state key="normal" title="SIGN IN">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="actionClickSingIn:" destination="BLE-AW-2mB" eventType="touchUpInside" id="e3e-Bz-yi6"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.18039215689999999" green="0.19215686269999999" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="HnM-gC-kVq" firstAttribute="centerX" secondItem="mmO-zi-K4o" secondAttribute="centerX" id="0ny-jQ-Bc7"/>
+                                            <constraint firstAttribute="trailing" secondItem="UAx-1I-mTc" secondAttribute="trailing" constant="57" id="HwQ-ZB-W96"/>
+                                            <constraint firstAttribute="height" constant="365" id="MZc-5s-ait"/>
+                                            <constraint firstItem="zIK-C4-ADH" firstAttribute="top" secondItem="UAx-1I-mTc" secondAttribute="bottom" constant="19" id="RZJ-9f-eLg"/>
+                                            <constraint firstItem="UAx-1I-mTc" firstAttribute="leading" secondItem="mmO-zi-K4o" secondAttribute="leading" constant="57" id="Tvm-2x-jCu"/>
+                                            <constraint firstItem="zIK-C4-ADH" firstAttribute="leading" secondItem="mmO-zi-K4o" secondAttribute="leading" constant="57" id="UY0-mZ-JLS"/>
+                                            <constraint firstItem="HnM-gC-kVq" firstAttribute="top" secondItem="mmO-zi-K4o" secondAttribute="top" constant="45" id="Zwc-Ya-IdR"/>
+                                            <constraint firstItem="Daa-sp-Dlh" firstAttribute="top" secondItem="HnM-gC-kVq" secondAttribute="bottom" constant="40" id="adv-96-rfA"/>
+                                            <constraint firstItem="UAx-1I-mTc" firstAttribute="top" secondItem="fxx-IJ-vRk" secondAttribute="bottom" constant="22" id="mJf-GA-Uvz"/>
+                                            <constraint firstItem="fxx-IJ-vRk" firstAttribute="top" secondItem="Daa-sp-Dlh" secondAttribute="bottom" constant="17" id="oFM-XI-pM7"/>
+                                            <constraint firstAttribute="trailing" secondItem="zIK-C4-ADH" secondAttribute="trailing" constant="57" id="oNg-46-uXm"/>
+                                            <constraint firstAttribute="trailing" secondItem="Daa-sp-Dlh" secondAttribute="trailing" constant="23" id="pKg-dI-rs1"/>
+                                            <constraint firstAttribute="trailing" secondItem="fxx-IJ-vRk" secondAttribute="trailing" constant="23" id="sRK-Ql-yG1"/>
+                                            <constraint firstItem="Daa-sp-Dlh" firstAttribute="leading" secondItem="mmO-zi-K4o" secondAttribute="leading" constant="23" id="tID-E6-Eol"/>
+                                            <constraint firstItem="fxx-IJ-vRk" firstAttribute="leading" secondItem="mmO-zi-K4o" secondAttribute="leading" constant="23" id="wv3-lN-Sbq"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                                <integer key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColor">
+                                                <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="mmO-zi-K4o" firstAttribute="centerY" secondItem="Euc-RK-FHP" secondAttribute="centerY" id="2p5-hN-mRB"/>
+                                    <constraint firstAttribute="bottom" secondItem="mmO-zi-K4o" secondAttribute="bottom" priority="750" constant="58" id="8o0-Nc-Obd"/>
+                                    <constraint firstItem="mmO-zi-K4o" firstAttribute="centerX" secondItem="Euc-RK-FHP" secondAttribute="centerX" id="Fu4-Po-TST"/>
+                                    <constraint firstItem="mmO-zi-K4o" firstAttribute="leading" secondItem="Euc-RK-FHP" secondAttribute="leading" constant="6" id="Ohm-Jj-5Zr"/>
+                                    <constraint firstItem="mmO-zi-K4o" firstAttribute="top" secondItem="Euc-RK-FHP" secondAttribute="top" priority="750" constant="57" id="YyN-QY-ASn"/>
+                                    <constraint firstAttribute="trailing" secondItem="mmO-zi-K4o" secondAttribute="trailing" constant="6" id="htO-Bj-oHp"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.2666666667" green="0.28627450980000002" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="PH4-Ue-lPi" firstAttribute="centerY" secondItem="mr3-5d-nck" secondAttribute="centerY" id="2PS-ha-AUd"/>
+                            <constraint firstItem="Euc-RK-FHP" firstAttribute="leading" secondItem="mr3-5d-nck" secondAttribute="leading" id="3WH-Xu-Gu9"/>
+                            <constraint firstAttribute="bottom" secondItem="PH4-Ue-lPi" secondAttribute="bottom" id="Jhd-Y3-pbh"/>
+                            <constraint firstItem="PH4-Ue-lPi" firstAttribute="top" secondItem="mr3-5d-nck" secondAttribute="top" id="PhW-Mx-raH"/>
+                            <constraint firstItem="Euc-RK-FHP" firstAttribute="top" secondItem="mr3-5d-nck" secondAttribute="top" id="Qi2-97-GmK"/>
+                            <constraint firstItem="PH4-Ue-lPi" firstAttribute="leading" secondItem="mr3-5d-nck" secondAttribute="leading" id="Swr-bV-VWc"/>
+                            <constraint firstAttribute="trailing" secondItem="Euc-RK-FHP" secondAttribute="trailing" id="ZpM-5f-rRd"/>
+                            <constraint firstItem="vSw-KT-Ql6" firstAttribute="top" secondItem="Euc-RK-FHP" secondAttribute="bottom" id="iAf-2p-Yy6"/>
+                            <constraint firstAttribute="trailing" secondItem="PH4-Ue-lPi" secondAttribute="trailing" id="vms-ay-PUD"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="loginScrollView" destination="Euc-RK-FHP" id="ezZ-BL-zGN"/>
+                        <outlet property="loginTextField" destination="S0T-od-Ok9" id="VCH-M1-m0x"/>
+                        <outlet property="passwordTextField" destination="Hb0-A1-r47" id="7c2-Zl-OIF"/>
+                        <outlet property="substrateForLoginView" destination="mmO-zi-K4o" id="qYC-ls-skS"/>
+                        <segue destination="lBE-Yg-pl2" kind="show" id="hfC-m2-1kZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VGp-oD-kHi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-572" y="313"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="List" width="30" height="30"/>
+        <image name="Settings" width="30" height="30"/>
+        <image name="Splash" width="320" height="568"/>
+        <image name="TimePopup" width="40" height="31"/>
+        <image name="TimePopupOn180" width="40" height="31"/>
+    </resources>
+    <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+</document>
